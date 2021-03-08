@@ -10,7 +10,7 @@ class Operation:
         pass
 
     def somme(self, a, b):
-        return @ + b
+        return a + b
 
 
 # creer une nouvelle instance de la class Operation
