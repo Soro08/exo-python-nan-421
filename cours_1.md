@@ -55,3 +55,21 @@ Le solde du compte de Jean est 800 euros.
 >>> compte2.affiche()
 Le solde du compte de Marc est 500 euros.
 ``` 
+
+### Exercice 3
+
+Generateurs. Écrivez une classe `TableMultiplication` qui crée des objets initialisés
+avec un nombre entier. Ajouter une méthode `.prochain()` qui renvoie à chaque appel un nouveau
+terme de la table de multiplication correspondante.
+
+```python 
+>>> tab = TableMultiplication(3)
+>>> tab.prochain()
+0
+>>> tab.prochain()
+3
+>>> tab.prochain()
+6
+>>> tab.prochain()
+9
+```
