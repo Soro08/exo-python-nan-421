@@ -96,3 +96,11 @@ calcule le plus grand commun diviseur entre deux entiers a et b.
 >>> r2.affiche()
 3/2
 ```
+### Exercice 6
+
+On se propose de représenter les polynômes en une indéterminée avec un nombre
+quelconque de termes :
+
+$$
+c_0 + c_1×x + c_2×  \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
