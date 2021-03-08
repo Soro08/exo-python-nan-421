@@ -73,3 +73,26 @@ terme de la table de multiplication correspondante.
 >>> tab.prochain()
 9
 ```
+### Exercice 4
+
+Écrivez une classe `Fraction` qui crée des objets initialisés avec deux nombres entiers
+`.num` et `.denom` pour le numérateur et le dénominateur. Ajoutez une méthode `.affiche()` qui
+affiche une représentation de la fraction. Ajoutez des méthodes spéciales pour pouvoir utiliser les
+opérateurs `+, -, *, /`.
+Pour réduire la fraction, vous pouvez employer la fonction `math.gcd(a, b)` du module math, qui
+calcule le plus grand commun diviseur entre deux entiers a et b.
+
+```python
+>>> f = Fraction(3, 4)
+>>> f.affiche()
+3/4
+>>> g = Fraction(1, 2)
+>>> g.affiche()
+1/2
+>>> r1 = f + g
+>>> r.affiche()
+5/4
+>>> r2 = f / g
+>>> r2.affiche()
+3/2
+```
