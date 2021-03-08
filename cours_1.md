@@ -21,3 +21,37 @@ print(Operation.somme(10,30))
 
 
 ``` 
+
+## TP Class Python
+
+### Exercice 1
+
+Écrivez une classe `Domino` pour représenter une pièce de domino. Les objet sont
+initialisés avec les valeurs des deux faces, A et B. Ajoutez une méthode `.affiche_points()` qui
+affiche les valeurs des deux faces, et une méthode `.totale()` qui retourne la somme de deux
+valeurs.
+
+```python 
+>>> d = Domino(4, 6)
+>>> d.affiche_points()
+face A: 4, face B: 6
+>>> x = d.totale()
+>>> print(x)
+10
+``` 
+### Exercice 2
+
+Écrivez une classe `CompteBancaire`. Les objets sont initialisés avec le nom du titulaire et le solde. L’argument solde doit être facultatif et avoir une valeur prédéfinie zéro. Ajoutez
+deux méthodes `.depot(somme)` et `.retrait(somme)` pour changer le solde. Ajoutez une méthode
+`.affiche()` qui montre le solde courant.
+
+```python
+>>> compte1 = CompteBancaire(’Jean’, 1000)
+>>> compte1.retrait(200)
+>>> compte1.affiche()
+Le solde du compte de Jean est 800 euros.
+>>> compte2 = CompteBancaire(’Marc’)
+>>> compte2.depot(500)
+>>> compte2.affiche()
+Le solde du compte de Marc est 500 euros.
+``` 
